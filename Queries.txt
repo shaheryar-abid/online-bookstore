@@ -1,0 +1,36 @@
+Genre table:
+SELECT DISTINCT genre FROM GENRES ORDER BY genre ASC;
+
+Movie:
+SELECT DISTINCT movieName FROM MOVIE ORDER BY movieName ASC;
+
+SELECT DISTINCT moviePrice FROM MOVIE ORDER BY moviePrice DESC;
+
+SELECT DISTINCT genre, AVG(moviePrice) FROM MOVIE GROUP BY genre;
+
+SELECT DISTINCT genre FROM movie GROUP BY genre ORDER BY genre DESC;
+
+Customer:
+SELECT DISTINCT customerName FROM CUSTOMER ORDER BY customerName ASC;
+
+Admin:
+SELECT DISTINCT username FROM ADMIN ORDER BY username ASC;
+
+Shopping Cart:
+SELECT DISTINCT orderId, AVG(price) FROM SHOPPINGCART ORDER BY orderId ASC;
+
+Payment:
+SELECT DISTINCT authen FROM PAYMENT ORDER BY authen ASC;
+
+Membership:
+SELECT DISTINCT points FROM MEMBERSHIP ORDER BY points DESC;
+
+Account:
+SELECT DISTINCT username, COUNT(points) FROM ACCOUNT GROUP BY username;
+
+Catalog:
+SELECT genre, COUNT(genre) FROM CATALOG GROUP BY genre ORDER BY genre;
+
+Wishlist:
+SELECT DISTINCT username, COUNT(username) FROM WISHLIST GROUP BY username;
+SELECT DISTINCT username FROM WISHLIST GROUP BY username;
